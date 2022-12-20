@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dark_blue"
+    tools:context=".AuthActivity">
+
+    <TextView
+        android:id="@+id/discover"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="480px"
+        android:width="253dp"
+        android:height="100dp"
+        android:fontFamily="@font/source_sans_pro"
+        android:letterSpacing="0"
+        android:lineHeight="50dp"
+        android:text="@string/discover_all_about_sport"
+        android:textAlignment="viewStart"
+        android:textColor="@color/white"
+        android:textFontWeight="600"
+        android:textSize="40sp"
+        android:typeface="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="PxUsage" />
+
+    <TextView
+        android:id="@+id/search_mill"
+        android:layout_width="253dp"
+        android:layout_height="60dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="14dp"
+        android:gravity="top"
+        android:text="@string/search_millions"
+        android:textColor="#65656B"
+        app:layout_constraintStart_toStartOf="@id/discover"
+        app:layout_constraintTop_toBottomOf="@id/discover" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="78.4px"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/mbappe"
+        tools:ignore="PxUsage" />
+
+    <Button
+        android:id="@+id/sign_in"
+        android:layout_width="201dp"
+        android:layout_height="66dp"
+        android:layout_marginTop="45px"
+        android:backgroundTint="#246BFD"
+        android:fontFamily="@font/source_sans_pro"
+        android:text="@string/sign_in"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        android:typeface="normal"
+        app:cornerRadius="16dp"
+        app:layout_constraintStart_toStartOf="@id/discover"
+        app:layout_constraintTop_toBottomOf="@id/search_mill"
+        tools:ignore="PxUsage" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="39dp"
+        android:fontFamily="@font/source_sans_pro"
+        android:text="@string/sign_up"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:typeface="normal"
+        app:layout_constraintBottom_toBottomOf="@id/sign_in"
+        app:layout_constraintStart_toEndOf="@id/sign_in"
+        app:layout_constraintTop_toTopOf="@id/sign_in" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
