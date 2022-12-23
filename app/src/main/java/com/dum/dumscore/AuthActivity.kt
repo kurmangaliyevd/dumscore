@@ -3,7 +3,6 @@ package com.dum.dumscore
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.dum.dumscore.databinding.ActivityAuthBinding
-import com.dum.dumscore.databinding.ActivityMainBinding
 
 class AuthActivity : AppCompatActivity() {
 
@@ -15,6 +14,5 @@ lateinit var binding: ActivityAuthBinding
 
         setContentView(binding.root)
 
-        MAIN = this
     }
 }

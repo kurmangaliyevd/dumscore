@@ -16,12 +16,11 @@
         android:width="253dp"
         android:height="100dp"
         android:fontFamily="@font/source_sans_pro"
-        android:letterSpacing="0"
-        android:lineHeight="50dp"
         android:text="@string/discover_all_about_sport"
         android:textAlignment="viewStart"
+        android:lineSpacingExtra="1sp"
         android:textColor="@color/white"
-        android:textFontWeight="600"
+        android:textStyle="bold"
         android:textSize="40sp"
         android:typeface="normal"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -33,15 +32,13 @@
         android:id="@+id/search_mill"
         android:layout_width="253dp"
         android:layout_height="60dp"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
         android:layout_marginTop="14dp"
         android:gravity="top"
         android:text="@string/search_millions"
         android:textColor="#65656B"
         app:layout_constraintStart_toStartOf="@id/discover"
         app:layout_constraintTop_toBottomOf="@id/discover" />
-    `
+
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -50,7 +47,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/mbappe"
-        tools:ignore="PxUsage" />
+        tools:ignore="PxUsage"
+        android:contentDescription="@string/mbappe_on_welcome_fragment" />
 
     <Button
         android:id="@+id/sign_in"
@@ -83,7 +81,6 @@
         app:layout_constraintBottom_toBottomOf="@id/sign_in"
         app:layout_constraintStart_toEndOf="@id/sign_in"
         app:layout_constraintTop_toTopOf="@id/sign_in" />
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 
