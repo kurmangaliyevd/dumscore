@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:background="#222232"
+    android:background="@drawable/fragment_sign_in_background"
 
     tools:context=".SignInFragment">
 
@@ -41,13 +41,16 @@
         android:layout_marginTop="106dp"
         android:layout_marginEnd="24dp"
         android:gravity="center_vertical"
+        android:hint="@string/email"
         android:minWidth="327dp"
         android:minHeight="64dp"
+        android:textColorHint="#65656B"
         app:boxBackgroundColor="@color/dark_blue"
         app:boxCornerRadiusBottomEnd="16dp"
         app:boxCornerRadiusBottomStart="16dp"
         app:boxCornerRadiusTopEnd="16dp"
         app:boxCornerRadiusTopStart="16dp"
+        app:boxStrokeWidth="0dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:startIconDrawable="@drawable/ic_email"
@@ -61,15 +64,13 @@
             android:paddingTop="23dp"
             android:paddingEnd="1dp"
             android:paddingBottom="23dp"
-            android:text="@string/email"
             android:textAlignment="textStart"
-            android:textColor="#65656B"
+            android:textColor="@color/white"
             android:textSize="14sp"
             app:layout_constraintBottom_toBottomOf="@id/email_textField"
             app:layout_constraintStart_toStartOf="@id/email_textField"
             app:layout_constraintTop_toTopOf="@id/email_textField" />
     </com.google.android.material.textfield.TextInputLayout>
-
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/password_textField"
@@ -79,16 +80,18 @@
         android:layout_marginTop="24dp"
         android:layout_marginEnd="24dp"
         android:gravity="center_vertical"
+        android:hint="@string/password"
         android:minWidth="327dp"
         android:minHeight="64dp"
+        android:textColorHint="@color/grey"
         app:boxBackgroundColor="@color/dark_blue"
         app:boxCornerRadiusBottomEnd="16dp"
         app:boxCornerRadiusBottomStart="16dp"
         app:boxCornerRadiusTopEnd="16dp"
         app:boxCornerRadiusTopStart="16dp"
+        app:boxStrokeWidth="0dp"
         app:endIconDrawable="@drawable/ic_hide"
         app:endIconTint="@null"
-
         app:layout_constraintStart_toStartOf="@id/email_textField"
         app:layout_constraintTop_toBottomOf="@id/email_textField"
         app:startIconDrawable="@drawable/ic_password"
@@ -102,19 +105,21 @@
             android:paddingTop="23dp"
             android:paddingEnd="1dp"
             android:paddingBottom="23dp"
-            android:text="@string/password"
             android:textAlignment="textStart"
-            android:textColor="#65656B"
+            android:textColor="@color/white"
             android:textSize="14sp" />
     </com.google.android.material.textfield.TextInputLayout>
 
-    <ImageView
+    <ImageButton
+        android:id="@+id/hideBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:contentDescription="@string/hide_password"
-        android:paddingStart="313dp"
-        android:paddingEnd="45.91dp"
         android:src="@drawable/ic_hide"
+        android:paddingEnd="0dp"
+        android:paddingStart="0dp"
+        android:backgroundTint="@color/dark_blue"
+        android:layout_marginEnd="45dp"
         app:layout_constraintBottom_toBottomOf="@id/password_textField"
         app:layout_constraintEnd_toEndOf="@id/password_textField"
         app:layout_constraintTop_toTopOf="@id/password_textField" />
@@ -126,7 +131,6 @@
         android:layout_marginTop="26dp"
         android:paddingStart="40dp"
         android:paddingEnd="0dp"
-
         app:layout_constraintStart_toStartOf="@id/password_textField"
         app:layout_constraintTop_toBottomOf="@id/password_textField">
 
