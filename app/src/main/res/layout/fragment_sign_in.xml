@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:background="#222232"
+
     tools:context=".SignInFragment">
 
     <TextView
@@ -49,7 +50,7 @@
         app:boxCornerRadiusTopStart="16dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:startIconDrawable="@drawable/ic_outline_email"
+        app:startIconDrawable="@drawable/ic_email"
         app:startIconTint="@null">
 
         <com.google.android.material.textfield.TextInputEditText
@@ -63,10 +64,12 @@
             android:text="@string/email"
             android:textAlignment="textStart"
             android:textColor="#65656B"
+            android:textSize="14sp"
             app:layout_constraintBottom_toBottomOf="@id/email_textField"
             app:layout_constraintStart_toStartOf="@id/email_textField"
             app:layout_constraintTop_toTopOf="@id/email_textField" />
     </com.google.android.material.textfield.TextInputLayout>
+
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/password_textField"
@@ -101,7 +104,103 @@
             android:paddingBottom="23dp"
             android:text="@string/password"
             android:textAlignment="textStart"
-            android:textColor="#65656B" />
+            android:textColor="#65656B"
+            android:textSize="14sp" />
     </com.google.android.material.textfield.TextInputLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/hide_password"
+        android:paddingStart="313dp"
+        android:paddingEnd="45.91dp"
+        android:src="@drawable/ic_hide"
+        app:layout_constraintBottom_toBottomOf="@id/password_textField"
+        app:layout_constraintEnd_toEndOf="@id/password_textField"
+        app:layout_constraintTop_toTopOf="@id/password_textField" />
+
+    <RadioGroup
+        android:id="@+id/remember_option"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="26dp"
+        android:paddingStart="40dp"
+        android:paddingEnd="0dp"
+
+        app:layout_constraintStart_toStartOf="@id/password_textField"
+        app:layout_constraintTop_toBottomOf="@id/password_textField">
+
+        <RadioButton
+            android:id="@+id/remember_me"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:button="@drawable/remember_me_button"
+            android:paddingStart="13.2dp"
+            android:paddingEnd="0dp"
+            android:text="@string/remember_me"
+            android:textColor="@color/grey"
+            android:textSize="14sp" />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/forgot_pass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="50dp"
+        android:fontFamily="@font/source_sans_pro"
+        android:text="@string/forgot_password"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/remember_option"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/remember_option" />
+
+    <Button
+        android:id="@+id/sign_in"
+        android:layout_width="201dp"
+        android:layout_height="66dp"
+        android:layout_marginTop="85dp"
+        android:backgroundTint="#246BFD"
+        android:fontFamily="@font/source_sans_pro"
+        android:letterSpacing="0"
+        android:text="@string/sign_in"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        android:typeface="normal"
+        app:cornerRadius="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/password_textField" />
+
+    <TextView
+        android:id="@+id/don_t_have_account"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/source_sans_pro"
+        android:text="@string/don_t_have_account"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/sign_in" />
+
+    <TextView
+        android:id="@+id/sign_up_caps"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:fontFamily="@font/source_sans_pro"
+        android:text="@string/sign_up_caps"
+        android:textAllCaps="true"
+        android:textColor="#246BFD"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/don_t_have_account"
+        app:layout_constraintStart_toEndOf="@id/don_t_have_account"
+        app:layout_constraintTop_toTopOf="@id/don_t_have_account" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
