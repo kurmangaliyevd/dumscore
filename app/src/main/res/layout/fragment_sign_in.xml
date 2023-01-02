@@ -59,6 +59,8 @@
             android:id="@+id/email_edit_text"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ !@#$%^*?"
             android:imeOptions="actionNext"
             android:paddingStart="1dp"
             android:paddingTop="23dp"
@@ -91,16 +93,17 @@
         app:boxCornerRadiusTopEnd="16dp"
         app:boxCornerRadiusTopStart="16dp"
         app:boxStrokeWidth="0dp"
-        app:endIconDrawable="@drawable/ic_hide"
         app:endIconTint="@null"
         app:layout_constraintStart_toStartOf="@id/email_textField"
         app:layout_constraintTop_toBottomOf="@id/email_textField"
+        app:passwordToggleEnabled="true"
         app:startIconDrawable="@drawable/ic_password">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/password_edit_text"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ !@#$%^*?"
             android:imeOptions="actionDone"
             android:inputType="textPassword"
             android:paddingStart="1dp"
@@ -113,19 +116,6 @@
             android:textSize="14sp" />
     </com.google.android.material.textfield.TextInputLayout>
 
-    <ImageButton
-        android:id="@+id/hideBtn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="45dp"
-        android:backgroundTint="@color/dark_blue"
-        android:contentDescription="@string/hide_password"
-        android:paddingStart="0dp"
-        android:paddingEnd="0dp"
-        android:src="@drawable/ic_hide"
-        app:layout_constraintBottom_toBottomOf="@id/password_textField"
-        app:layout_constraintEnd_toEndOf="@id/password_textField"
-        app:layout_constraintTop_toTopOf="@id/password_textField" />
 
     <RadioGroup
         android:id="@+id/remember_option"

@@ -15,8 +15,9 @@ class SignInFragment : BottomSheetDialogFragment() {
         return inflater.inflate(R.layout.fragment_sign_in, container, false)
     }
 
-    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        super.onViewCreated(view, savedInstanceState)
 
-    }
+    /* override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+         super.onViewCreated(view, savedInstanceState)
+
+     }*/
 }
