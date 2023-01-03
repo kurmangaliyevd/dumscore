@@ -1,8 +1,7 @@
 package com.dum.dumscore
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import androidx.fragment.app.FragmentManager
+import androidx.appcompat.app.AppCompatActivity
 import com.dum.dumscore.databinding.ActivityAuthBinding
 
 class AuthActivity : AppCompatActivity() {
@@ -14,10 +13,5 @@ class AuthActivity : AppCompatActivity() {
         binding = ActivityAuthBinding.inflate(layoutInflater)
 
         setContentView(binding.root)
-
-        val welcomeFragment = WelcomeFragment()
-        val fm: FragmentManager = supportFragmentManager
-        fm.beginTransaction().add(R.id.activity_auth, welcomeFragment).commit()
-
     }
 }
