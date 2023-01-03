@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:background="@drawable/fragment_sign_in_background"
+    android:background="#222232"
 
     tools:context=".SignInFragment">
 
@@ -53,7 +53,8 @@
         app:boxStrokeWidth="0dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:startIconDrawable="@drawable/ic_email">
+        app:startIconDrawable="@drawable/ic_email"
+        app:startIconTint="#65656B">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/email_edit_text"
