@@ -10,4 +10,6 @@
     <color name="dark_blue">#181829</color>
     <color name="grey">#65656B</color>
     <color name="red">#FFBF2D2D</color>
+
+    <color name="deep_purple_background">#222232</color>
 </resources>
