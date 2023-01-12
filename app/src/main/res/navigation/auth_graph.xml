@@ -23,5 +23,14 @@
         <action
             android:id="@+id/action_signInFragment_to_welcomeFragment"
             app:destination="@id/welcomeFragment" />
+        <action
+            android:id="@+id/action_signInFragment_to_chooseSportTypeFragment"
+            app:destination="@id/chooseSportTypeFragment" />
     </dialog>
+
+    <fragment
+        android:id="@+id/chooseSportTypeFragment"
+        android:name="com.dum.dumscore.ChooseSportTypeFragment"
+        android:label="fragment_choose_sport_type"
+        tools:layout="@layout/fragment_choose_sport_type" />
 </navigation>

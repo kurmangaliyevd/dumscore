@@ -65,6 +65,7 @@
             android:paddingStart="1dp"
             android:paddingTop="23dp"
             android:paddingEnd="1dp"
+            android:text="asd@asd.com"
             android:paddingBottom="23dp"
             android:singleLine="true"
             android:textAlignment="textStart"
@@ -110,6 +111,7 @@
             android:paddingTop="23dp"
             android:paddingEnd="1dp"
             android:paddingBottom="23dp"
+            android:text="12345678"
             android:singleLine="true"
             android:textAlignment="textStart"
             android:textColor="@color/white"
@@ -147,9 +149,10 @@
 
     <Button
         android:id="@+id/sign_in"
-        android:layout_width="201dp"
+        android:layout_width="match_parent"
         android:layout_height="66dp"
         android:layout_marginTop="85dp"
+        android:layout_marginHorizontal="24dp"
         android:backgroundTint="#246BFD"
         android:fontFamily="@font/source_sans_pro"
         android:letterSpacing="0"
