@@ -10,7 +10,7 @@
     <color name="dark_blue">#181829</color>
     <color name="grey">#65656B</color>
     <color name="red">#FFBF2D2D</color>
-
+    <color name="blue_btn">#246BFD</color>
     <color name="deep_purple_background">#222232</color>
     <color name="peach">#F4A58A</color>
 </resources>

@@ -1,4 +1,6 @@
-package com.dum.dumscore
+package com.dum.dumscore.sport_type
+
+import com.dum.dumscore.R
 
 object SportTypeDataProvider {
 

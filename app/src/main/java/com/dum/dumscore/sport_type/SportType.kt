@@ -1,4 +1,4 @@
-package com.dum.dumscore
+package com.dum.dumscore.sport_type
 
 import androidx.annotation.DrawableRes
 

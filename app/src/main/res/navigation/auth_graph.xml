@@ -30,7 +30,7 @@
 
     <fragment
         android:id="@+id/chooseSportTypeFragment"
-        android:name="com.dum.dumscore.ChooseSportTypeFragment"
+        android:name="com.dum.dumscore.sport_type.ChooseSportTypeFragment"
         android:label="fragment_choose_sport_type"
         tools:layout="@layout/fragment_choose_sport_type" />
 </navigation>
