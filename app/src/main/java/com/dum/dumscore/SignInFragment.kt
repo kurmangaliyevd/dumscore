@@ -32,7 +32,7 @@ class SignInFragment : BottomSheetDialogFragment() {
         binding.signIn.setOnClickListener {
             if (isValidated()) {
                 Toast.makeText(activity, getString(R.string.success), Toast.LENGTH_LONG).show()
-                findNavController().navigate(R.id.action_signInFragment_to_welcomeFragment)
+                findNavController().navigate(R.id.action_signInFragment_to_chooseSportTypeFragment)
             }
         }
 
