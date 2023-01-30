@@ -125,6 +125,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="26dp"
         android:paddingStart="13.2dp"
+        android:paddingEnd="0dp"
         android:text="@string/remember_me"
         android:textColor="@color/grey"
         android:textSize="14sp"
