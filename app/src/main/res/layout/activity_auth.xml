@@ -20,5 +20,6 @@
         app:layout_constraintTop_toTopOf="parent"
         app:navGraph="@navigation/auth_graph" />
 
+
 </androidx.constraintlayout.widget.ConstraintLayout>
 

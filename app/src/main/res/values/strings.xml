@@ -22,4 +22,6 @@
     <string name="what_sport_do_you_interest">What sport do you interest?</string>
     <string name="you_can_choose">You can choose more than one</string>
     <string name="sporticon" translatable="false">sportIcon</string>
+
+
 </resources>
