@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/auth_graph"
-    app:startDestination="@id/welcomeFragment">
+    app:startDestination="@id/chooseLanguageFragment">
 
     <fragment
         android:id="@+id/welcomeFragment"
@@ -33,4 +33,9 @@
         android:name="com.dum.dumscore.sport_type.ChooseSportTypeFragment"
         android:label="fragment_choose_sport_type"
         tools:layout="@layout/fragment_choose_sport_type" />
+    <fragment
+        android:id="@+id/chooseLanguageFragment"
+        android:name="com.dum.dumscore.ChooseLanguageFragment"
+        android:label="fragment_choose_language"
+        tools:layout="@layout/fragment_choose_language" />
 </navigation>
